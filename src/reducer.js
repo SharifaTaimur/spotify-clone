@@ -6,9 +6,9 @@ export const initialState = {
   //   top_artists: null,
   playing: false,
   item: null,
-  token: null,
-  // token:
-  //   "BQD5XhrjEP1vtF5DD966BRqvhxSx-l4MJyqKZ8z70ZjyQ-0rqp0HXBP2FWWq07CjwkLvMVmN1OPwfkq-8cojeZIvCqAwu13qutnqXByoQvqinwldYYFZwpv0stpa732VsmdoPlMseq8tne5cWkmDmm7qkCJhVkSTZnlgHEFTfFjoQRIssliw",
+  // token: null,
+  token:
+    "BQD5XhrjEP1vtF5DD966BRqvhxSx-l4MJyqKZ8z70ZjyQ-0rqp0HXBP2FWWq07CjwkLvMVmN1OPwfkq-8cojeZIvCqAwu13qutnqXByoQvqinwldYYFZwpv0stpa732VsmdoPlMseq8tne5cWkmDmm7qkCJhVkSTZnlgHEFTfFjoQRIssliw",
 };
 
 const reducer = (state, action) => {

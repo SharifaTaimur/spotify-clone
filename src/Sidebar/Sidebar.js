@@ -19,7 +19,7 @@ const Sidebar = () => {
       <SidebarOptions title="Home" Icon={HomeIcon} />
       <SidebarOptions title="Search" Icon={SearchIcon} />
       <SidebarOptions title="Library" Icon={LibraryMusicIcon} />
-
+      <br />
       <strong className="sidebar__title">PLAYLISTS</strong>
       <hr />
       {playlists?.items?.map((playlist) => (
