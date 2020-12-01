@@ -7,7 +7,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import SongRow from "./../SongRow/SongRow";
 
-const Body = ({ spotify }) => {
+function Body({ spotify }) {
   const [{ discover_weekly }, dispatch] = useStateValue();
 
   const playPlaylist = (id) => {
@@ -30,12 +30,14 @@ const Body = ({ spotify }) => {
   };
 
   const playSong = (id) => {
+    console.log("SONG IS PLAYING>>>", id);
     spotify
       .play({
         uris: [`spotify:track:${id}`],
       })
       .then((res) => {
         spotify.getMyCurrentPlayingTrack().then((r) => {
+          console.log("RRR>>>", r);
           dispatch({
             type: "SET_ITEM",
             item: r.item,
@@ -77,6 +79,6 @@ const Body = ({ spotify }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Body;
